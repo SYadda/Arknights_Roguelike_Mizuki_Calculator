@@ -3,7 +3,9 @@
 
 依据规则书 https://docs.qq.com/doc/DZUZCa0ZzSEZVYnZ4 编写的计算器，供裁判统计选手的得分。
 
-使用Python，PyQt5编写，界面如下图所示：
+__请使用Windows系统，下载“眉笔杯分数计算器.exe”，直接打开即可使用。__
+
+本程序使用Python，PyQt5编写，界面如下图所示：
 
 ![运行截图](运行截图.png)
 
