@@ -1,0 +1,1 @@
+pyuic5 -o login.py login.ui
