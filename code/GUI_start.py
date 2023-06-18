@@ -37,7 +37,7 @@ class login_window(QMainWindow, Ui_MainWindow):
 
         隐藏关卡 = self.cb_31.isChecked() * 50 + self.cb_32.isChecked() * 100 + \
                    self.cb_33.isChecked() * 80 + self.cb_34.isChecked() * 120 + \
-                   self.cb_35.isChecked() * 40 + self.cb_36.isChecked() * 50 + \
+                   self.cb_35.isChecked() * 30 + self.cb_36.isChecked() * 40 + \
                    self.cb_37.isChecked() * 50 + \
                    self.cb_38.isChecked() * (20 + self.rb_13.isChecked() * 50 + self.rb_15.isChecked() * 50)
 
