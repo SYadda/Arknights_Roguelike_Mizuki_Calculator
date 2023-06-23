@@ -29,9 +29,9 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>500</x>
+      <x>400</x>
       <y>880</y>
-      <width>200</width>
+      <width>180</width>
       <height>50</height>
      </rect>
     </property>
@@ -221,6 +221,19 @@
       <string>指挥/集群/后勤/研究</string>
      </property>
     </widget>
+    <widget class="QRadioButton" name="rb_null_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>81</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>null</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
@@ -261,6 +274,19 @@
      </property>
      <property name="text">
       <string>骑士</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rb_null_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>81</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>null</string>
      </property>
     </widget>
    </widget>
@@ -1511,6 +1537,19 @@ p, li { white-space: pre-wrap; }
       <string>墓碑(险路勿近)</string>
      </property>
     </widget>
+    <widget class="QRadioButton" name="rb_null_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>81</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>null</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_6">
     <property name="geometry">
@@ -1566,6 +1605,19 @@ p, li { white-space: pre-wrap; }
       <string>未进入/未通关6层</string>
      </property>
     </widget>
+    <widget class="QRadioButton" name="rb_null_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>81</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>null</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QLabel" name="label_26">
     <property name="geometry">
@@ -1619,6 +1671,25 @@ p, li { white-space: pre-wrap; }
      <bool>false</bool>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>880</y>
+      <width>180</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>清空已选</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
@@ -1650,9 +1721,25 @@ p, li { white-space: pre-wrap; }
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>930</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>599</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>calculate()</slot>
-  <slot>force_mizuki()</slot>
+  <slot>clear()</slot>
  </slots>
 </ui>

@@ -8,6 +8,25 @@ class login_window(QMainWindow, Ui_MainWindow):
         super(login_window, self).__init__(parent)
         self.setupUi(self)
 
+    def clear(self):
+        for _ in range(1, 41):
+            eval('self.cb_' + str(_)).setChecked(False)
+
+        self.rb_null_1.setChecked(True)
+        self.rb_null_2.setChecked(True)
+        self.rb_null_3.setChecked(True)
+        self.rb_null_4.setChecked(True)
+        self.rb_12.setChecked(True)
+        self.rb_14.setChecked(True)
+
+        self.sb_1.setValue(0)
+        self.sb_2.setValue(1)
+        for _ in range(3, 11):
+            eval('self.sb_' + str(_)).setValue(0)
+
+        self.lineEdit.setText('')
+        self.label_show.setText('')
+
     def calculate(self):
         选手名字 = self.lineEdit.text()
 

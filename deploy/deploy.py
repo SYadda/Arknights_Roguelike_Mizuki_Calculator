@@ -21,7 +21,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(500, 880, 200, 50))
+        self.pushButton.setGeometry(QtCore.QRect(400, 880, 180, 50))
         font = QtGui.QFont()
         font.setFamily("Agency FB")
         font.setPointSize(20)
@@ -82,6 +82,9 @@ class Ui_MainWindow(object):
         self.rb_6 = QtWidgets.QRadioButton(self.groupBox)
         self.rb_6.setGeometry(QtCore.QRect(860, 10, 171, 19))
         self.rb_6.setObjectName("rb_6")
+        self.rb_null_1 = QtWidgets.QRadioButton(self.groupBox)
+        self.rb_null_1.setGeometry(QtCore.QRect(10, 40, 81, 19))
+        self.rb_null_1.setObjectName("rb_null_1")
         self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_2.setGeometry(QtCore.QRect(120, 210, 321, 31))
         self.groupBox_2.setStyleSheet("background:transparent;border-width:0;border-style:outset")
@@ -93,6 +96,9 @@ class Ui_MainWindow(object):
         self.rb_9 = QtWidgets.QRadioButton(self.groupBox_2)
         self.rb_9.setGeometry(QtCore.QRect(240, 10, 61, 19))
         self.rb_9.setObjectName("rb_9")
+        self.rb_null_2 = QtWidgets.QRadioButton(self.groupBox_2)
+        self.rb_null_2.setGeometry(QtCore.QRect(10, 40, 81, 19))
+        self.rb_null_2.setObjectName("rb_null_2")
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(30, 110, 71, 31))
         font = QtGui.QFont()
@@ -447,6 +453,9 @@ class Ui_MainWindow(object):
         self.rb_19 = QtWidgets.QRadioButton(self.groupBox_5)
         self.rb_19.setGeometry(QtCore.QRect(860, 10, 131, 19))
         self.rb_19.setObjectName("rb_19")
+        self.rb_null_4 = QtWidgets.QRadioButton(self.groupBox_5)
+        self.rb_null_4.setGeometry(QtCore.QRect(10, 50, 81, 19))
+        self.rb_null_4.setObjectName("rb_null_4")
         self.groupBox_6 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_6.setGeometry(QtCore.QRect(620, 210, 541, 31))
         self.groupBox_6.setStyleSheet("background:transparent;border-width:0;border-style:outset")
@@ -461,6 +470,9 @@ class Ui_MainWindow(object):
         self.rb_20 = QtWidgets.QRadioButton(self.groupBox_6)
         self.rb_20.setGeometry(QtCore.QRect(20, 10, 161, 19))
         self.rb_20.setObjectName("rb_20")
+        self.rb_null_3 = QtWidgets.QRadioButton(self.groupBox_6)
+        self.rb_null_3.setGeometry(QtCore.QRect(20, 40, 81, 19))
+        self.rb_null_3.setObjectName("rb_null_3")
         self.label_26 = QtWidgets.QLabel(self.centralwidget)
         self.label_26.setGeometry(QtCore.QRect(520, 220, 71, 21))
         font = QtGui.QFont()
@@ -478,6 +490,13 @@ class Ui_MainWindow(object):
         self.cb_40.setGeometry(QtCore.QRect(980, 460, 101, 19))
         self.cb_40.setChecked(False)
         self.cb_40.setObjectName("cb_40")
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_2.setGeometry(QtCore.QRect(620, 880, 180, 50))
+        font = QtGui.QFont()
+        font.setFamily("Agency FB")
+        font.setPointSize(20)
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setObjectName("pushButton_2")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -489,6 +508,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.pushButton.clicked.connect(MainWindow.calculate) # type: ignore
+        self.pushButton_2.clicked.connect(MainWindow.clear) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -504,8 +524,10 @@ class Ui_MainWindow(object):
         self.rb_4.setText(_translate("MainWindow", "狙医/术特/近锋/重辅"))
         self.rb_5.setText(_translate("MainWindow", "高规格/矛头"))
         self.rb_6.setText(_translate("MainWindow", "指挥/集群/后勤/研究"))
+        self.rb_null_1.setText(_translate("MainWindow", "null"))
         self.rb_7.setText(_translate("MainWindow", "未通关/海沫"))
         self.rb_9.setText(_translate("MainWindow", "骑士"))
+        self.rb_null_2.setText(_translate("MainWindow", "null"))
         self.label_4.setText(_translate("MainWindow", "选手名字"))
         self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -565,17 +587,39 @@ class Ui_MainWindow(object):
         self.rb_17.setText(_translate("MainWindow", "绣锤(荒地群猎)"))
         self.rb_18.setText(_translate("MainWindow", "寒灾(寒灾之咒)"))
         self.rb_19.setText(_translate("MainWindow", "墓碑(险路勿近)"))
+        self.rb_null_4.setText(_translate("MainWindow", "null"))
         self.rb_10.setText(_translate("MainWindow", "大蒂"))
         self.rb_11.setText(_translate("MainWindow", "水月"))
         self.rb_20.setText(_translate("MainWindow", "未进入/未通关6层"))
+        self.rb_null_3.setText(_translate("MainWindow", "null"))
         self.label_26.setText(_translate("MainWindow", "6层BOSS"))
         self.cb_40.setText(_translate("MainWindow", "余烬方阵"))
+        self.pushButton_2.setText(_translate("MainWindow", "清空已选"))
 
 
 class login_window(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
         super(login_window, self).__init__(parent)
         self.setupUi(self)
+
+    def clear(self):
+        for _ in range(1, 41):
+            eval('self.cb_' + str(_)).setChecked(False)
+
+        self.rb_null_1.setChecked(True)
+        self.rb_null_2.setChecked(True)
+        self.rb_null_3.setChecked(True)
+        self.rb_null_4.setChecked(True)
+        self.rb_12.setChecked(True)
+        self.rb_14.setChecked(True)
+
+        self.sb_1.setValue(0)
+        self.sb_2.setValue(1)
+        for _ in range(3, 11):
+            eval('self.sb_' + str(_)).setValue(0)
+
+        self.lineEdit.setText('')
+        self.label_show.setText('')
 
     def calculate(self):
         选手名字 = self.lineEdit.text()
@@ -630,4 +674,3 @@ if __name__ == '__main__':
     first_window = login_window()
     first_window.show()
     sys.exit(app.exec_())
-    
